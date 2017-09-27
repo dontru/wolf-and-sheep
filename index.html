@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Wolf and Sheep</title>
+  <link href="css/index.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+<body>
+  <div id= "iconMenu">&equiv;</div>
+
+  <div id="menu" class="center-horizontally-and-vertically">
+    <div id="title">
+      WOLF AND SHEEP
+    </div>
+    <div style="height: 20px;"></div>
+
+    <div class="menuElem" id="loader">
+      LOADING<br>
+      <span id="percentage">0</span>%
+    </div>
+
+    <div class="menuElem" id="main">
+      <div style="display: inline-block;">
+        <div class="option" id="wolf"><div style="height:15px"></div>WOLF</div>
+        <div class="option" id="sheep"><div style="height:15px"></div>SHEEP</div>
+        <div style="width: 225px; font-size: 17px;">SINGLE PLAYER</div>
+      </div>
+      <div style="display: inline-block;">
+        <div class="option" id="wolf-vs-sheep">SHEEP<br>WOLF</div>
+        <div class="option" id="sheep-vs-wolf">WOLF<br>SHEEP</div>
+        <div style="width: 225px; font-size: 17px;">TWO PLAYERS</div>
+      </div>
+    </div>
+
+    <div class="menuElem" id="default">
+      <div class="option" id="newGame">NEW GAME</div>
+      <div class="option" id="flipBoard">FLIP BOARD</div>
+    </div>
+
+    <div class="menuElem" id="confirm">
+      ARE YOU SURE?<br>
+      <span class="option" id="confirmYes">YES</span>
+      <span class="option" id="confirmNo">NO</span>
+    </div>
+  </div>
+  <div id="menuBackground"></div>
+
+  <canvas id="myCanvas" width="100" height="100"></canvas>
+  <script src="js/base.js"></script>
+  <script src="js/GFX.js"></script>
+  <script src="js/UI.js"></script>
+  <script src="js/board.js"></script>
+  <script src="js/scene.js"></script>
+  <script src="js/engine.js"></script>
+  <script src="js/mouse.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
